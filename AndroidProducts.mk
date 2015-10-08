@@ -14,4 +14,4 @@
 
 PRODUCT_MAKEFILES := \
 	$(LOCAL_DIR)/aosp_d2303.mk \
-	$(LOCAL_DIR)/omni_eagle.mk
+	$(LOCAL_DIR)/omni_eagle_dsds.mk

@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-TARGET_KERNEL_CONFIG := aosp_yukon_eagle_defconfig
+TARGET_KERNEL_CONFIG := aosp_yukon_eagle_dsds_defconfig
 
 # Include others
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
@@ -24,20 +24,20 @@ $(call inherit-product-if-exists, prebuilts/chromium/webview_prebuilt.mk)
 $(call inherit-product-if-exists, vendor/google/products/gms.mk)
 
 DEVICE_PACKAGE_OVERLAYS += \
-    device/sony/eagle/overlay
+    device/sony/eagle_dsds/overlay
 
 PRODUCT_COPY_FILES += \
-    device/sony/eagle/rootdir/system/etc/mixer_paths.xml:system/etc/mixer_paths.xml \
-    device/sony/eagle/rootdir/system/etc/thermanager.xml:system/etc/thermanager.xml \
-    device/sony/eagle/rootdir/system/etc/sap.conf:system/etc/sap.conf \
-    device/sony/eagle/rootdir/system/etc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
-    device/sony/eagle/rootdir/system/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
-    device/sony/eagle/rootdir/fstab.yukon:root/fstab.yukon \
-    device/sony/eagle/rootdir/init.yukon.dev.rc:root/init.yukon.dev.rc
+    device/sony/eagle_dsds/rootdir/system/etc/mixer_paths.xml:system/etc/mixer_paths.xml \
+    device/sony/eagle_dsds/rootdir/system/etc/thermanager.xml:system/etc/thermanager.xml \
+    device/sony/eagle_dsds/rootdir/system/etc/sap.conf:system/etc/sap.conf \
+    device/sony/eagle_dsds/rootdir/system/etc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
+    device/sony/eagle_dsds/rootdir/system/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
+    device/sony/eagle_dsds/rootdir/fstab.yukon:root/fstab.yukon \
+    device/sony/eagle_dsds/rootdir/init.yukon.dev.rc:root/init.yukon.dev.rc
 
 # Product attributes
 PRODUCT_NAME := aosp_d2303
-PRODUCT_DEVICE := eagle
+PRODUCT_DEVICE := eagle_dsds
 PRODUCT_MODEL := Xperia M2 (AOSP)
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony

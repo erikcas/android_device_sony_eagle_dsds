@@ -15,4 +15,4 @@
 #
 
 add_lunch_combo aosp_d2303-userdebug
-add_lunch_combo omni_eagle-userdebug
+add_lunch_combo omni_eagle_dsds-userdebug
